@@ -1,12 +1,14 @@
-function App() {
-  const title = 'Blog Post';
-  const body = 'This is my first blog.';
+import FeedbackItem from './components/FeedbackItem';
+import Header from './components/Header';
 
+function App() {
   return (
-    <div className='container'>
-      <h1>{title}</h1>
-      <p>{body}</p>
-    </div>
+    <>
+      <Header />
+      <div className='container'>
+        <FeedbackItem />
+      </div>
+    </>
   );
 }
 
